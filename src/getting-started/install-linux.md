@@ -9,7 +9,6 @@
 ```bash
 $ sudo apt-get update -y
 $ sudo apt install -y curl vim build-essential
-$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 Rustup: Rust安装器和版本管理工具。
