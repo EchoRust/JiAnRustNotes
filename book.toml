@@ -1,0 +1,7 @@
+[book]
+title = "技安Rust笔记"
+authors = ["技安"]
+description = "记录技安在学习Rust语言中的点点滴滴"
+language = "zh-CN"
+multilingual = false
+src = "src"
