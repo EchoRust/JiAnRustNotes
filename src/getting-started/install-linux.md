@@ -45,8 +45,8 @@ Options:
     --datadir=[/share]      install data
     --mandir=[/share/man]   install man pages in PATH
     --docdir=[\<default\>]  install documentation in PATH
-    --disable-ldconfig      don't run ldconfig after installation (Linux only)
-    --disable-verify        don't obsolete
+    --disable-ldconfig      do not run ldconfig after installation (Linux only)
+    --disable-verify        do not obsolete
     --verbose               run with verbose output
 
 # 解释说明
@@ -64,15 +64,17 @@ Options:
     --mandir=[/share/man]   安装手册文件路径, 以prefix为前缀
     --docdir=[\<default\>]  安装文档文件路径, 默认为/usr/local/share/doc
     --disable-ldconfig      安装后不允许ldconfig(仅限Linux)
-    --disable-verify        don't obsolete
+    --disable-verify        do not obsolete
     --verbose               输出详细运行信息
 
 $ ./install.sh --destdir=~/rustlang
 $ vim ~/.bashrc
-    # 在最后一行添加环境变量
-    export PATH="$PATH:/home/echo/rustlang/usr/local/bin"
+# 在最后一行添加环境变量
+export PATH="$PATH:/home/echo/rustlang/usr/local/bin"
+
 $ source ~/.bashrc
 $ cargo -V
+cargo 1.68.2 (6feb7c9cf 2023-03-26)
 ```
 
 ##### 所有可用组件列表
