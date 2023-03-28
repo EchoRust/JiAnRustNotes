@@ -1,24 +1,33 @@
 # Linux系统安装
 
-### Ubuntu 系统安装`Rust`
+## Ubuntu 系统安装`Rust`
 
-#### 自动安装
+### 自动安装
 
 安装依赖
 
 ```bash
 $ sudo apt-get update -y
 $ sudo apt install -y curl vim build-essential
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-#### 手动安装
+Rustup: Rust安装器和版本管理工具。
 
-[下载文件](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers)
+安装 Rust 的主要方式是通过 Rustup 这一工具，它既是一个 Rust 安装器又是一个版本管理工具。
+
+```bash
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+### 手动安装
+
+[下载对应系统的安装文件](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers)
 
 ```bash
 $ cd ~/Downloads
-$ tar -zxvf rust-1.65.0-x86_64-unknown-linux-gnu
-$ cd rust-1.65.0-x86_64-unknown-linux-gnu
+$ tar -zxvf rust-1.68.2-x86_64-unknown-linux-gnu
+$ cd rust-1.68.2-x86_64-unknown-linux-gnu
 $ ./install.sh --help
 
 Usage: ./install.sh [options]
@@ -87,7 +96,7 @@ $ ./install.sh --list-components
 * rust-analysis-x86_64-unknown-linux-gnu
 ```
 
-#### 问题
+### 问题
 
 出现
 ```
