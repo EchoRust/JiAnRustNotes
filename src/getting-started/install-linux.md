@@ -87,6 +87,8 @@ export PATH="$PATH:/home/echo/rustlang/usr/local/bin"
 $ source ~/.bashrc
 $ cargo -V
 cargo 1.68.2 (6feb7c9cf 2023-03-26)
+$ rustc -V
+rustc 1.68.2 (9eb3afe9e 2023-03-27)
 ```
 
 ##### 所有可用组件列表
