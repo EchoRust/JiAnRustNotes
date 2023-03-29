@@ -1,19 +1,17 @@
 # Linux系统安装
 
-## Ubuntu 系统安装`Rust`
+## Ubuntu 系统安装 `Rust`
 
-### 自动安装
-
-安装依赖
+### 安装依赖
 
 ```bash
 $ sudo apt-get update -y
-$ sudo apt install -y curl vim build-essential
+$ sudo apt install -y curl wget vim build-essential
 ```
 
-Rustup: Rust安装器和版本管理工具。
+### 自动安装
 
-安装 Rust 的主要方式是通过 Rustup 这一工具，它既是一个 Rust 安装器又是一个版本管理工具。
+安装 `Rust` 的主要方式是通过 `Rustup` 这一工具，它既是一个 `Rust` 安装器又是一个版本管理工具。
 
 ```bash
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -21,11 +19,18 @@ $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ### 手动安装
 
-[下载对应系统的安装文件](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers)
+[查看最新版的系统安装文件](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers)
+
+[下载链接: rust-1.68.2-x86_64-unknown-linux-gnu](https://static.rust-lang.org/dist/rust-1.68.2-x86_64-unknown-linux-gnu.tar.gz) (307M)
+
+`https://static.rust-lang.org/dist/rust-1.68.2-x86_64-unknown-linux-gnu.tar.gz`
+
+将文件 `rust-1.68.2-x86_64-unknown-linux-gnu.tar.gz` 下载到 `~/Downloads` 文件夹下.
 
 ```bash
 $ cd ~/Downloads
-$ tar -zxvf rust-1.68.2-x86_64-unknown-linux-gnu
+$ wget -c https://static.rust-lang.org/dist/rust-1.68.2-x86_64-unknown-linux-gnu.tar.gz
+$ tar -zxvf rust-1.68.2-x86_64-unknown-linux-gnu.tar.gz
 $ cd rust-1.68.2-x86_64-unknown-linux-gnu
 $ ./install.sh --help
 
@@ -45,28 +50,35 @@ Options:
     --datadir=[/share]      install data
     --mandir=[/share/man]   install man pages in PATH
     --docdir=[\<default\>]  install documentation in PATH
-    --disable-ldconfig      do not run ldconfig after installation (Linux only)
-    --disable-verify        do not obsolete
+    --disable-ldconfig      don't run ldconfig after installation (Linux only)
+    --disable-verify        don't obsolete
     --verbose               run with verbose output
+```
 
-# 解释说明
+#### 安装参数解释说明
 
-    --uninstall             仅从安装的prefix卸载
-    --destdir=[<none>]      设置安装根目录
-    --prefix=[/usr/local]   设置安装前缀目录
-    --without=[<none>]      逗号分隔的不安装组件列表
-    --components=[<none>]   以逗号分隔的要安装的组件列表
-    --list-components       列出所有的组件
-    --sysconfdir=[/etc]     安装配置文件路径, 以prefix为前缀
-    --bindir=[/bin]         安装二进制文件路径, 以prefix为前缀
-    --libdir=[/lib]         安装库文件路径, 以prefix为前缀
-    --datadir=[/share]      安装数据文件路径, 以prefix为前缀
-    --mandir=[/share/man]   安装手册文件路径, 以prefix为前缀
-    --docdir=[\<default\>]  安装文档文件路径, 默认为/usr/local/share/doc
-    --disable-ldconfig      安装后不允许ldconfig(仅限Linux)
-    --disable-verify        do not obsolete
-    --verbose               输出详细运行信息
+```
+--uninstall             仅从安装的prefix卸载
+--destdir=[<none>]      设置安装根目录
+--prefix=[/usr/local]   设置安装前缀目录
+--without=[<none>]      逗号分隔的不安装组件列表
+--components=[<none>]   以逗号分隔的要安装的组件列表
+--list-components       列出所有的组件
+--sysconfdir=[/etc]     安装配置文件路径, 以prefix为前缀
+--bindir=[/bin]         安装二进制文件路径, 以prefix为前缀
+--libdir=[/lib]         安装库文件路径, 以prefix为前缀
+--datadir=[/share]      安装数据文件路径, 以prefix为前缀
+--mandir=[/share/man]   安装手册文件路径, 以prefix为前缀
+--docdir=[\<default\>]  安装文档文件路径, 默认为/usr/local/share/doc
+--disable-ldconfig      安装后不允许ldconfig(仅限Linux)
+--disable-verify        禁用验证
+--verbose               输出详细运行信息
+```
 
+将安装在目录 `~/rustlang` 中
+
+```bash
+$ mkdir ~/rustlang
 $ ./install.sh --destdir=~/rustlang
 $ vim ~/.bashrc
 # 在最后一行添加环境变量
@@ -97,11 +109,8 @@ $ ./install.sh --list-components
 * rust-analysis-x86_64-unknown-linux-gnu
 ```
 
-### 问题
+#### 问题
 
-出现
-```
-error: linker `cc` not found
-```
+1、出现 `error: linker 'cc' not found` 错误信息
 
 这是缺少 `compiler toolchain`, 通过命令安装`sudo apt install build-essential` 即可解决.
