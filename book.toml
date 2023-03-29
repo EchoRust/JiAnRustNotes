@@ -5,3 +5,4 @@ description = "记录技安在学习Rust语言中的点点滴滴"
 language = "zh-CN"
 multilingual = false
 src = "src"
+git-repository-url = "https://github.com/EchoRust/JiAnRustNotes"
