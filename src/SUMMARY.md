@@ -8,6 +8,7 @@
     - [Linux系统安装](getting-started/install-linux.md)
     - [macOS系统安装](getting-started/install-mac.md)
     - [Windows系统安装](getting-started/install-windows.md)
+    - [Rust更新与卸载](getting-started/update-remove.md)
   - [Rust编辑器](getting-started/editor.md)
   - [Hello, World!](getting-started/hello-world.md)
   - [学习和使用 cargo](getting-started/cargo.md)

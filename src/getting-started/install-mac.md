@@ -8,13 +8,13 @@ $ xcode-select --install
 
 `MAC` 系统安装 `Rust` 和 `Linux` 差不多
 
-### 自动安装
+## 自动安装
 
 ```bash
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-### 手动安装
+## 手动安装
 
 由于 `MAC` 电脑存在 `intel` 和 `M`系列的芯片, 手动安装需要根据电脑的架构下载对应的安装文件.
 

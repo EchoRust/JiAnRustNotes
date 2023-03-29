@@ -9,7 +9,7 @@ $ sudo apt-get update -y
 $ sudo apt install -y curl wget vim build-essential
 ```
 
-### 自动安装
+## 自动安装
 
 安装 `Rust` 的主要方式是通过 `Rustup` 这一工具，它既是一个 `Rust` 安装器又是一个版本管理工具。
 
@@ -17,13 +17,12 @@ $ sudo apt install -y curl wget vim build-essential
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-### 手动安装
+## 手动安装
 
 [查看最新版的系统安装文件](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers)
 
-[下载链接: rust-1.68.2-x86_64-unknown-linux-gnu](https://static.rust-lang.org/dist/rust-1.68.2-x86_64-unknown-linux-gnu.tar.gz) (307M)
+下载 [rust-1.68.2-x86_64-unknown-linux-gnu](https://static.rust-lang.org/dist/rust-1.68.2-x86_64-unknown-linux-gnu.tar.gz)
 
-`https://static.rust-lang.org/dist/rust-1.68.2-x86_64-unknown-linux-gnu.tar.gz`
 
 将文件 `rust-1.68.2-x86_64-unknown-linux-gnu.tar.gz` 下载到 `~/Downloads` 文件夹下.
 
