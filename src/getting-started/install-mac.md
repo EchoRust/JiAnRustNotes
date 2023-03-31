@@ -39,3 +39,5 @@ $ open rust-1.68.2-x86_64-apple-darwin.pkg
 随后会打开 `Rust` 的安装向导, 根据向导提示一步一步的安装完成即可.
 
 ![The Rust Compiler 安装器](../img/mac-install.png)
+
+<span class="caption">The Rust Compiler 安装器</span>

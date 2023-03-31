@@ -28,7 +28,7 @@ $ code .
 文件名: `main.rs`
 ```rust
 fn main() {
-    println!("Hello world!");
+    println!("Hello, world!");
 }
 ```
 
@@ -37,7 +37,7 @@ fn main() {
 $ cd ~/rust-projects/hello_world
 $ rustc main.rs
 $ ./main
-Hello world!
+Hello, world!
 ```
 
 在 `Windows` 系统上, 输入命令 `.\main.exe`.
@@ -45,9 +45,9 @@ Hello world!
 > cd C:\Users\Echo\rust-projects/hello_world
 > rustc main.rs
 > .\main.exe
-Hello world!
+Hello, world!
 ```
 
-如果没有出错误，终端应该可以打印字符串 `Hello world!`。如果没有，需要检查一下 `Rust` 是否已安装正确。
+如果没有出错误，终端应该可以打印字符串 `Hello, world!`。如果没有，需要检查一下 `Rust` 是否已安装正确。
 
-如果 `Hello world!` 出现了，恭喜你！你已经正式编写了一个 `Rust` 程序。现在你成为一名 `Rustacean` 了，欢迎加入！
+如果 `Hello, world!` 出现了，恭喜你！你已经正式编写了一个 `Rust` 程序。现在你成为一名 `Rustacean` 了，欢迎加入！

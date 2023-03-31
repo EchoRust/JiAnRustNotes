@@ -14,6 +14,8 @@
 
 ![图形化安装](../img/win-msvc-install.png)
 
+<span class="caption">图1 图形化安装</span>
+
 * 使用 `C++` 的桌面开发
 * `Windows 10 (或 11) SDK`
 * 语言包中选中 `英语`，以及其他你需要的语言包
@@ -99,3 +101,5 @@ rustc 1.68.2 (9eb3afe9e 2023-03-27)
 进入 `C:\Echo`, 打开下载的 `rust-1.68.2-x86_64-pc-windows-msvc.msi` 文件，根据向导提示一步步安装即可。
 
 ![手动安装](../img/win-msi.png)
+
+<span class="caption">图2 手动安装</span>
