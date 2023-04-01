@@ -1,11 +1,10 @@
 [book]
-title = "技安Rust笔记"
-authors = ["技安"]
-description = "记录技安在学习Rust语言中的点点滴滴"
+title = "技安 Rust 笔记"
+authors = ["技安 <tgxz2000@gmail.com>"]
+description = "记录技安在学习 Rust 语言中的点点滴滴"
 language = "zh-CN"
 multilingual = false
 src = "src"
-git-repository-url = "https://github.com/EchoRust/JiAnRustNotes"
 
 [output.html]
 additional-css = ["ferris.css", "theme/2018-edition.css"]
