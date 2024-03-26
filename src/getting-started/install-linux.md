@@ -115,3 +115,13 @@ $ ./install.sh --list-components
 1、出现 `error: linker 'cc' not found` 错误信息
 
 这是缺少 `compiler toolchain`, 通过命令安装`sudo apt install build-essential` 即可解决.
+
+2、出现 `run pkg_config fail: Could not run PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 pkg-config --libs --cflags openssl The pkg-config command could not be found.` 错误信息
+
+需要安装`sudo apt install pkg-config`
+
+3、 出现 `Could not find directory of OpenSSL installation, and this -sys crate cannot proceed without this knowledge. If OpenSSL is installed and this crate had trouble finding it,  you can set the OPENSSL_DIR environment variable for the` 错误信息
+
+需要安装 `sudo apt install libssl-dev`
+
+`Fedora` 安装 `sudo apt install libssl-devel`

@@ -13,7 +13,9 @@
 # 设置为字节镜像地址
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+```
 
+```console
 # 其他镜像地址
 # 清华大学
 export RUSTUP_DIST_SERVER="https://mirrors.tuna.tsinghua.edu.cn/rustup"
@@ -33,18 +35,16 @@ export RUSTUP_UPDATE_ROOT="https://mirror.sjtu.edu.cn/rust-static/rustup"
 * 字节跳动 `crates.io` 源
 
 ```toml
+# Rust >= 1.68 版本建议使用 sparse-index，速度快。
+# 把下面第二行的 replace-with = 'rsproxy' 改成 replace-with = 'rsproxy-sparse'
 [source.crates-io]
-# To use sparse index, change 'rsproxy' to 'rsproxy-sparse'
-replace-with = 'rsproxy'
-
+replace-with = 'rsproxy-sparse'
 [source.rsproxy]
 registry = "https://rsproxy.cn/crates.io-index"
 [source.rsproxy-sparse]
 registry = "sparse+https://rsproxy.cn/index/"
-
 [registries.rsproxy]
 index = "https://rsproxy.cn/crates.io-index"
-
 [net]
 git-fetch-with-cli = true
 ```
