@@ -16,4 +16,5 @@
 - [宏(Macro)](macro/index.md)
   - [声明宏](macro/macro-rules.md)
 - [RustOS](os/index.md)
-  - [ArceOS系统调用 - FastDDS移植](os/arceos-fastdds.md)]
+  - [ArceOS系统调用 - FastDDS移植](os/arceos-fastdds.md)
+  - [FastDDS在ArceOS中的系统调用](os/arceos-fastdds-syscall.md)
