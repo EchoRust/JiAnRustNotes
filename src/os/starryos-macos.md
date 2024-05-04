@@ -6,7 +6,7 @@
 
 这是一个介绍如何在`macOS`系统下部署 `StarryOS` 开发环境的说明文档。此文档默认构建`x86_64`架构的`fat`磁盘镜像
 
-<!-- [仓库提交记录](https://github.com/Arceos-monolithic/Starry/pull/46) `https://github.com/Arceos-monolithic/Starry/pull/46` -->
+[仓库提交记录](https://github.com/Arceos-monolithic/Starry/pull/46) `https://github.com/Arceos-monolithic/Starry/pull/46`
 
 ## 操作步骤
 
