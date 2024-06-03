@@ -19,5 +19,14 @@
   - [ArceOS系统调用 - FastDDS移植](os/arceos-fastdds.md)
   - [FastDDS在ArceOS中的系统调用](os/arceos-fastdds-syscall.md)
   - [macOS开发StarryOS环境部署说明](os/starryos-macos.md)
+  - [最新版本StarryOS环境搭建说明](os/new-starry-os.md)
+  - [tokio在StarryOS中的系统调用分析](os/starryos-tokio.md)]
+- [Dora]()
+  - [Dora在 x86_64 架构中的系统调用分析](dora/linux.md)
+  - [Dora在 aarch64 架构中的系统调用分析](dora/aarch64.md)
+  - [Dora在 aarch64 架构中的 ArceOS 运行](dora/arceos.md)
+  - [Dora在 RISCV64 架构中运行](dora/riscv64.md)
   <!-- - [NetLink内核分析]()
     - [原理解析](os/netlink/principle.md) -->
+<!-- - [优秀资源翻译](translate/index.md)
+  - [设计优雅的库API](translate/elegant-api.md) -->

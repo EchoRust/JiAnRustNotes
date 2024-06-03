@@ -9,13 +9,19 @@
 
 设置终端的环境变量为国内镜像站点，可以加速安装 `Rust` 和更新。
 
-```console
+```shell
 # 设置为字节镜像地址
-export RUSTUP_DIST_SERVER="https://rsproxy.cn"
-export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+$ export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+$ export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 ```
 
-```console
+重启终端或者执行`source ****`之类的命令即可生效。
+```shell
+# 执行Rust在线安装方式就可以使用了
+$ curl --proto '=https' --tlsv1.2 -sSf https://rsproxy.cn/rustup-init.sh | sh
+```
+
+```shell
 # 其他镜像地址
 # 清华大学
 export RUSTUP_DIST_SERVER="https://mirrors.tuna.tsinghua.edu.cn/rustup"
@@ -30,12 +36,14 @@ export RUSTUP_UPDATE_ROOT="https://mirror.sjtu.edu.cn/rust-static/rustup"
 
 ## `crates.io` 镜像
 
-<span class="filename">文件名 `~/.cargo/config`</span>
+<span class="filename">文件名 `~/.cargo/config`</span>, 如果不存在可以新建这个文件.
+
+`windows`在`C`盘当前用户目录下面的`.cargo`目录下. 例如:`C:\Users\echo\.cargo\config`.
 
 * 字节跳动 `crates.io` 源
 
 ```toml
-# Rust >= 1.68 版本建议使用 sparse-index，速度快。
+# Rust >= 1.68 版本建议使用 sparse-index，速度更快。
 # 把下面第二行的 replace-with = 'rsproxy' 改成 replace-with = 'rsproxy-sparse'
 [source.crates-io]
 replace-with = 'rsproxy-sparse'
