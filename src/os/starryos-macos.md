@@ -29,7 +29,7 @@ $ brew install qemu
 
 ```shell
 $ cargo install cargo-binutils
-$ rustup component add llvm-tools
+$ rustup component add llvm
 ```
 
 4. 创建磁盘文件
@@ -75,7 +75,7 @@ $ mkdir -p mnt
 $ hdiutil attach disk.img -mountpoint mnt
 
 # 拷贝文件
-$ cp -r ./testcases/$FILE/* ./mnt/
+$ cp -r ./testcases/x86_64_linux_musl/* ./mnt/
 
 # 卸载磁盘
 $ hdiutil detach mnt

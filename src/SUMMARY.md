@@ -13,20 +13,33 @@
   - [Hello, World!](getting-started/hello-world.md)
   - [学习和使用 cargo](getting-started/cargo.md)
   - [配置国内镜像服务](getting-started/mirrors.md)
+<!-- - [Rust语言的基本语法](rust/base/index.md)
+  - [语句和表达式](rust/base/statement.md) -->
 - [宏(Macro)](macro/index.md)
   - [声明宏](macro/macro-rules.md)
 - [RustOS](os/index.md)
+- [Linux 系统编程说明]()
+  - [文件属性 stat,lstat,fstat系统调用](os/linux/stat.md)
+  - [Ubuntu源码编译QEMU](os/linux/ubuntu-qemu.md)
+- [ArceOS - 清华大学组件化操作系统]()
   - [ArceOS系统调用 - FastDDS移植](os/arceos-fastdds.md)
   - [FastDDS在ArceOS中的系统调用](os/arceos-fastdds-syscall.md)
   - [macOS开发StarryOS环境部署说明](os/starryos-macos.md)
   - [最新版本StarryOS环境搭建说明](os/new-starry-os.md)
   - [tokio在StarryOS中的系统调用分析](os/starryos-tokio.md)]
-- [Dora]()
+  - [gdb移植StarryOS](os/starryos-gdb.md)]
+- [Dora - Rust 开发的机器人系统]()
   - [Dora在 x86_64 架构中的系统调用分析](dora/linux.md)
+  <!-- - [Dora在 x86_64 架构中的 ArceOS 运行](dora/arceos-x86_64.md) -->
   - [Dora在 aarch64 架构中的系统调用分析](dora/aarch64.md)
   - [Dora在 aarch64 架构中的 ArceOS 运行](dora/arceos.md)
   - [Dora在 RISCV64 架构中运行](dora/riscv64.md)
+  - [从零开始在StarryOS中运行Dora]()
+    - [环境搭建](dora/zero/env.md))
+    - [运行 dora -h](dora/zero/dora-h.md)
   <!-- - [NetLink内核分析]()
     - [原理解析](os/netlink/principle.md) -->
 <!-- - [优秀资源翻译](translate/index.md)
   - [设计优雅的库API](translate/elegant-api.md) -->
+- [其它]()
+  - [hdiutil工具](other/hdiutil.md)

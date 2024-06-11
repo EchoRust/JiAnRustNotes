@@ -1,0 +1,79 @@
+# gdb移植StarryOS
+
+本教程主要移植的`x86_64`架构的`gdb`,其它架构类似
+
+## 补全动态库
+
+`/dev`, `/tmp`
+
+
+
+- `libreadline.so.8`
+- `libncursesw.so.6`
+- `libtinfo.so.6`
+- `libpython3.10.so.1.0`
+- `libexpat.so.1`
+- `liblzma.so.5`
+- `libbabeltrace.so.1`
+- `libbabeltrace-ctf.so.1`
+- `libipt.so.2`
+- `libmpfr.so.6`
+- `libgmp.so.10`
+- `libsource-highlight.so.4`
+- `libxxhash.so.0`
+- `libdebuginfod.so.1`
+- `libstdc++.so.6`
+- `libglib-2.0.so.0`
+- `libelf.so.1`
+- `libuuid.so.1`
+- `libboost_regex.so.1.74.0`
+- `libcurl-gnutls.so.4`
+- `libpcre.so.3`
+- `libicui18n.so.70`
+- `libicuuc.so.70`
+- `libnghttp2.so.14`
+- `libidn2.so.0`
+- `librtmp.so.1`
+- `libssh.so.4`
+- `libpsl.so.5`
+- `libnettle.so.8`
+- `libgnutls.so.30`
+- `libgssapi_krb5.so.2`
+- `libldap-2.5.so.0`
+- `liblber-2.5.so.0`
+- `libzstd.so.1`
+- `libbrotlidec.so.1`
+- `libicudata.so.70`
+- `libunistring.so.2`
+- `libhogweed.so.6`
+- `libcrypto.so.3`
+- `libp11-kit.so.0`
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
