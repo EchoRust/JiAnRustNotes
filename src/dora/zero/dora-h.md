@@ -1,5 +1,5 @@
 # 从零开始在 `StarryOS` 中运行 `Dora`
-# 运行 dora -h
+# 第二节：运行 `dora -h`
 
 接着上一节, 我们已经搭建好了`StarryOS`的开发环境, 现在开始运行`StarryOS`系统.
 
@@ -20,10 +20,12 @@ $ make clean && make A=apps/monolithic_userboot LOG=error ARCH=x86_64 FEATURES=i
 /dora: error while loading shared libraries: libgcc_s.so.1: cannot open shared object file: No such file or directory
 ```
 
-说明系统缺少动态库`libgcc_s.so.1`文件. 这个动态库文件我们可以通过`x86_64`架构下的`ubuntu 22.04`系统中的`/lib/x86_64-linux-gnu/`目录下去寻找缺少的动态库文件. 并把它复制到当前的磁盘的`/lib`目录下.
+说明系统缺少动态库`libgcc_s.so.1`文件. 这个动态库文件我们可以通过`x86_64`架构下的`ubuntu 22.04`系统中的`/lib/x86_64-linux-gnu/`目录下去寻找缺少的动态库文件. 并把它复制到当前的磁盘的`/lib`目录下。
 
 **注意**
-> 每次补全一个缺少的动态库之后,需要清空`make`缓存之后, 再构建运行系统才可以生效.
+> 每次补全一个缺少的动态库之后需要清空 `make` 缓存之后, 再构建运行系统才可以生效。
+>
+> 如此反复的看到提示缺少哪个的动态库，就复制过来。当然你也可以根据下面的表格对应的架构列出来的动态库文件，一次性的补全。
 
 整理各个架构下所需要的动态库文件
 
